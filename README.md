@@ -1,8 +1,8 @@
-# EKF SLAM (Odometry, GPS, LIDAR) on Victoria Park 2D Dataset
+# EKF SLAM (Odometry, GPS, LiDAR) on Victoria Park 2D Dataset
 
 ## Authors
 
-Tzu-yi Chiu, Narimane Zennaki (Ecole Polytechnique de Montréal)
+Tzu-Yi Chiu, Narimane Zennaki (Polytechnique Montréal)
 
 ## Usage
 
@@ -36,3 +36,12 @@ post-processing function for our own purpose.
 - `munkres.m` is a function which implements the Hungarian algorithm, allowing 
 to compute data association. Borrowed from: 
 https://www.mathworks.com/matlabcentral/fileexchange/20328-munkres-assignment-algorithm
+
+## Demonstration
+
+The following figure shows the constructed map, where green crosses indicate
+trees, while red points indicate received GPS signals. 
+The black line shows the estimated trajectory, and the current estimated 
+position is shown with a black circle.
+
+![image](demo.png)
